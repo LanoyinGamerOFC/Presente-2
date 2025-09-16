@@ -52,11 +52,11 @@ function startCounter() {
 
 // Player de música
 const songs = [
-  "musicas/Pode Morar Aqui.mp3",
-  "musicas/Fogo em Teus Olhos.mp3",
-  "musicas/Homem Deus.mp3",
-  "musicas/Êxodo.mp3",
-  "musicas/Somos Um.mp3"
+  "musicas/Pode Morar Aqui.ogg",
+  "musicas/Fogo em Teus Olhos.ogg",
+  "musicas/Homem Deus.ogg",
+  "musicas/Êxodo.ogg",
+  "musicas/Somos Um.ogg"
 ];
 let currentSongIndex = 0;
 const audio = document.getElementById("audio");
@@ -67,7 +67,7 @@ const durationEl = document.getElementById("duration");
 
 function loadSong(index) {
   audio.src = songs[index];
-  trackTitle.innerText = "🎶 Tocando agora: " + songs[index].split("/")[1].replace(".mp3","");
+  trackTitle.innerText = "🎶 Tocando agora: " + songs[index].split("/")[1].replace(".ogg","");
   audio.play();
 }
 
