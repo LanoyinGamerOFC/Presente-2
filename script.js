@@ -56,7 +56,8 @@ const songs = [
   "musicas/Fogo em Teus Olhos.ogg",
   "musicas/Homem Deus.ogg",
   "musicas/Êxodo.ogg",
-  "musicas/Somos Um.ogg"
+  "musicas/Somos Um.ogg",
+  "musicas/OH! Se Fendesses.ogg"
 ];
 let currentSongIndex = 0;
 const audio = document.getElementById("audio");
