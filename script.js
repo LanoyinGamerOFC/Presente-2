@@ -111,3 +111,26 @@ progress.addEventListener("input", () => {
 audio.addEventListener("ended", () => {
   nextSong();
 });
+
+// Partículas de coração
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerText = "💜";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 15 + 15 + "px";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+setInterval(createHeart, 800);
+
+// Animação do hambúrguer
+function toggleMenu() {
+  const menu = document.getElementById("menu-list");
+  const burger = document.querySelector(".hamburger");
+  menu.classList.toggle("hidden");
+  burger.classList.toggle("active");
+}
