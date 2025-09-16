@@ -52,11 +52,11 @@ function startCounter() {
 
 // Player de música
 const songs = [
-  "Presente-2/musicas/Pode Morar Aqui.mp3",
-  "Presente-2/musicas/Fogo em Teus Olhos.mp3",
-  "Presente-2/musicas/Homem Deus.mp3",
-  "Presente-2/musicas/Êxodo.mp3",
-  "Presente-2/musicas/Somos Um.mp3"
+  "musicas/Pode Morar Aqui.mp3",
+  "musicas/Fogo em Teus Olhos.mp3",
+  "musicas/Homem Deus.mp3",
+  "musicas/Êxodo.mp3",
+  "musicas/Somos Um.mp3"
 ];
 let currentSongIndex = 0;
 const audio = document.getElementById("audio");
