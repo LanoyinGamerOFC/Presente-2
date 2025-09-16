@@ -1,0 +1,120 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  background: #1a0033;
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#login-container input, #login-container button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#login-container button {
+  background-color: #6600cc;
+  color: white;
+  cursor: pointer;
+}
+
+.menu {
+  text-align: right;
+  padding: 10px;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+#menu-list.hidden {
+  display: none;
+}
+
+.verse {
+  margin: 30px 0;
+  font-size: 1.4em;
+  text-shadow: 0 0 5px #ff66ff, 0 0 10px #cc33ff;
+}
+
+#counter {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.favorite {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.spoiler summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.player {
+  margin-top: 30px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #6600cc;
+  color: white;
+  cursor: pointer;
+}
+
+#progress-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#progress {
+  width: 50%;
+  margin: 0 10px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+footer .version {
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #bbb;
+}

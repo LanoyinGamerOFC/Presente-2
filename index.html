@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentinho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-container" class="fade-in">
+    <h1 class="login-title">💜 Bem-vinda 💜</h1>
+    <input type="text" id="username" placeholder="Usuário">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div id="main-content" style="display:none;">
+    <nav class="menu">
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul id="menu-list" class="hidden">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Momentos (Em Breve)</a></li>
+      </ul>
+    </nav>
+
+    <div class="content fade-in">
+      <h2 class="verse">"Mulher virtuosa, quem a achará? O seu valor em muito ultrapassa os das mais finas joias!" <br>— Provérbios 31:10</h2>
+
+      <div id="counter"></div>
+
+      <p class="favorite">… e você já se tornou a minha pessoa favorita 💜</p>
+
+      <details class="spoiler">
+        <summary>Clique para ver a mensagem</summary>
+        <p id="greeting"></p>
+        <p>
+          Estou aqui só pra te dizer que você é muito especial para mim, muitas das vezes você me anima,
+          e faz meus dias melhores. Eu agradeço a Deus (e o Felipe e a Carol kkkk) por ter te conhecido. 
+          Você tem um brilho que é único e isso te torna muito especial. Que esse brilho do Espírito Santo 
+          não venha se apagar e que Deus continue te abençoando todos os dias. Bem, acho que é isso :3.
+        </p>
+      </details>
+
+      <div class="player">
+        <h3 id="track-title">🎶 Tocando agora: </h3>
+        <audio id="audio" controls></audio>
+        <div class="controls">
+          <button onclick="prevSong()">⏮</button></button>
+          <button onclick="togglePlay()">⏯</button>
+          <button onclick="nextSong()">⏭</button>
+        </div>
+        <div id="progress-container">
+          <span id="current-time">0:00</span>
+          <input type="range" id="progress" value="0" max="100">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+
+      <footer>
+        <p>Para a pessoa que faz meus dias especiais 💜 by Lucas (Segundo Testamento)</p>
+        <p class="version">v1.0.0</p>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
